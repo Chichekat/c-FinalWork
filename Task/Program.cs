@@ -9,3 +9,11 @@
 
 Console.WriteLine("Введите массив через пробел: ");
 string[] array = Console.ReadLine().Split().ToArray();
+
+void PrintArray (string[] arr){
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+    }
+    Console.WriteLine();
+}
