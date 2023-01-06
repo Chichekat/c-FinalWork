@@ -10,6 +10,11 @@
 Console.WriteLine("Введите массив через пробел: ");
 string[] array = Console.ReadLine().Split().ToArray();
 
+string[] newArray = SortArray(array);
+Console.WriteLine($"{array} {newArray}");
+PrintArray(array); 
+PrintArray(newArray);
+
 string[] SortArray (string[] arr1){
     string[] tempArr = new string[arr1.Length];
     int count = 0;
